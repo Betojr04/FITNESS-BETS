@@ -11,6 +11,8 @@ from api.models import db
 from api.routes import api
 from api.admin import setup_admin
 from api.commands import setup_commands
+import jwt
+
 
 #from models import Person
 
