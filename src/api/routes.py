@@ -6,6 +6,9 @@ from api.models import db, User
 from api.utils import generate_sitemap, APIException
 import jwt
 import hashlib
+from app.schema import UserSchema
+from app.exceptions import APIBadRequestException, APIDuplicateEntryException
+
 
 api = Blueprint('api', __name__)
 
